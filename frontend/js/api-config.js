@@ -1,1 +1,1 @@
-export const API_BASE_URL = 'http://localhost:5000'; // Change to your deployed Render URL before deploying frontend.
+export const API_BASE_URL = 'https://foliohub-law-firm-api.onrender.com';
