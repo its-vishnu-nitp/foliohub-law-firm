@@ -1,9 +1,197 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0F2A44"><meta name="description" content="Request a law firm consultation."><title>Booking | Foliohub Law Firm</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
-<body data-page="booking"><a class="skip-link" href="#main">Skip to content</a><header class="header"><div class="container header-inner"><a href="index.html" class="brand" aria-label="Foliohub Law Firm home"><span class="brand-mark">F<span class="brand-dot">.</span></span><span class="brand-words">FOLIOHUB <small>LAW FIRM</small></span></a><button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">☰</button><nav class="nav" id="nav" aria-label="Main navigation"><a href="index.html" data-page="index.html">Home</a>
-<a href="services.html" data-page="services.html">Services</a>
-<a href="gallery.html" data-page="gallery.html">Gallery</a>
-<a href="pricing.html" data-page="pricing.html">Pricing</a>
-<a href="booking.html" data-page="booking.html">Booking</a>
-<a href="reviews.html" data-page="reviews.html">Reviews</a>
-<a href="contact.html" data-page="contact.html">Contact</a></nav><a class="header-cta" href="booking.html">Book a Consultation <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><span class="eyebrow light">TAKE THE FIRST STEP</span><h1>A good conversation <em>starts here.</em></h1><p>Request an appointment, and we’ll help you move forward with more clarity.</p></div></section><section class="section"><div class="container form-grid"><div><span class="eyebrow">REACH OUT</span><h2>Let’s discuss<br><em>your next step.</em></h2><p>Tell us a little about your matter and your preferred date. Our team can review your request and follow up about availability.</p><div class="contact-small"><strong>What happens next?</strong><p>① Submit your request</p><p>② We review the information</p><p>③ We follow up to discuss availability</p></div><p class="subtle-note">Please do not include confidential or sensitive case details in this form. Submission does not establish an attorney–client relationship.</p></div><form class="form-card" id="booking-form" novalidate><h3>Request a consultation</h3><p class="form-intro">Fields marked * are required.</p><div class="field-row"><div class="field"><label for="fullName">Full name *</label><input id="fullName" name="name" autocomplete="name" maxlength="100" required placeholder="Your full name"></div><div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" minlength="7" maxlength="30" required placeholder="Your contact number"></div></div><div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="name@example.com"></div><div class="field"><label for="service">Service *</label><select id="service" name="service" required><option value="">Select a service</option><option value="Initial Consultation">Initial Consultation</option><option value="Corporate & Business">Corporate & Business</option><option value="Property & Real Estate">Property & Real Estate</option><option value="Family & Personal">Family & Personal</option></select></div><div class="field"><label for="date">Preferred date *</label><input type="date" id="date" name="date" required></div><div class="field"><label for="message">Brief message (optional)</label><textarea id="message" name="message" rows="4" maxlength="1000" placeholder="A general description, without confidential details"></textarea></div><button type="submit" class="btn btn-gold full-btn">Submit request <span>↗</span></button><p class="form-status" id="booking-status" role="status" aria-live="polite"></p><p class="form-foot">Submitting a request does not confirm an appointment.</p></form></div></section></main><footer class="footer"><div class="container footer-grid"><div><a class="brand brand-footer" href="index.html"><span class="brand-mark">F<span class="brand-dot">.</span></span><span class="brand-words">FOLIOHUB <small>LAW FIRM</small></span></a><p>Considered counsel. Confident next steps.</p><p class="fine">Demo website — sample firm details and content.</p></div><div><h3>Explore</h3><a href="services.html">Practice areas</a><a href="pricing.html">Pricing</a><a href="reviews.html">Client stories</a></div><div><h3>Get in touch</h3><a href="contact.html">Contact us</a><a href="booking.html">Request a consultation</a><p>Mon–Fri · 9:00 AM–6:00 PM</p></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Foliohub Law Firm. Demo project.</span><span>Built with care and clarity.</span></div></footer><script type="module" src="js/main.js"></script></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0F2A44" />
+    <meta name="description" content="Request a law firm consultation." />
+    <title>Booking | Foliohub Law Firm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="booking">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="Foliohub Law Firm home"
+          ><span class="brand-mark">F<span class="brand-dot">.</span></span
+          ><span class="brand-words">FOLIOHUB <small>LAW FIRM</small></span></a
+        ><button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          ☰
+        </button>
+        <nav class="nav" id="nav" aria-label="Main navigation">
+          <a href="index.html" data-page="index.html">Home</a>
+          <a href="services.html" data-page="services.html">Services</a>
+          <a href="gallery.html" data-page="gallery.html">Gallery</a>
+          <a href="pricing.html" data-page="pricing.html">Pricing</a>
+          <a href="booking.html" data-page="booking.html">Booking</a>
+          <a href="reviews.html" data-page="reviews.html">Reviews</a>
+          <a href="contact.html" data-page="contact.html">Contact</a>
+        </nav>
+        <a class="header-cta" href="booking.html"
+          >Book a Consultation <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow light">TAKE THE FIRST STEP</span>
+          <h1>A good conversation <em>starts here.</em></h1>
+          <p>
+            Request an appointment, and we’ll help you move forward with more
+            clarity.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container form-grid">
+          <div>
+            <span class="eyebrow">REACH OUT</span>
+            <h2>Let’s discuss<br /><em>your next step.</em></h2>
+            <p>
+              Tell us a little about your matter and your preferred date. Our
+              team can review your request and follow up about availability.
+            </p>
+            <div class="contact-small">
+              <strong>What happens next?</strong>
+              <p>① Submit your request</p>
+              <p>② We review the information</p>
+              <p>③ We follow up to discuss availability</p>
+            </div>
+            <p class="subtle-note">
+              Please do not include confidential or sensitive case details in
+              this form. Submission does not establish an attorney–client
+              relationship.
+            </p>
+          </div>
+          <form class="form-card" id="booking-form" novalidate>
+            <h3>Request a consultation</h3>
+            <p class="form-intro">Fields marked * are required.</p>
+            <div class="field-row">
+              <div class="field">
+                <label for="fullName">Full name *</label
+                ><input
+                  id="fullName"
+                  name="name"
+                  autocomplete="name"
+                  maxlength="100"
+                  required
+                  placeholder="Your full name"
+                />
+              </div>
+              <div class="field">
+                <label for="phone">Phone number *</label
+                ><input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  minlength="7"
+                  maxlength="30"
+                  required
+                  placeholder="Your contact number"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Email address *</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                maxlength="254"
+                required
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="field">
+              <label for="service">Service *</label
+              ><select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Initial Consultation">
+                  Initial Consultation
+                </option>
+                <option value="Corporate & Business">
+                  Corporate & Business
+                </option>
+                <option value="Property & Real Estate">
+                  Property & Real Estate
+                </option>
+                <option value="Family & Personal">Family & Personal</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Preferred date *</label
+              ><input type="date" id="date" name="date" required />
+            </div>
+            <div class="field">
+              <label for="message">Brief message (optional)</label
+              ><textarea
+                id="message"
+                name="message"
+                rows="4"
+                maxlength="1000"
+                placeholder="A general description, without confidential details"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold full-btn">
+              Submit request <span>↗</span>
+            </button>
+            <p
+              class="form-status"
+              id="booking-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <p class="form-foot">
+              Submitting a request does not confirm an appointment.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="index.html"
+            ><span class="brand-mark">F<span class="brand-dot">.</span></span
+            ><span class="brand-words"
+              >FOLIOHUB <small>LAW FIRM</small></span
+            ></a
+          >
+          <p>Considered counsel. Confident next steps.</p>
+          <p class="fine">Demo website — sample firm details and content.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="services.html">Practice areas</a
+          ><a href="pricing.html">Pricing</a
+          ><a href="reviews.html">Client stories</a>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <a href="contact.html">Contact us</a
+          ><a href="booking.html">Request a consultation</a>
+          <p>Mon–Fri · 9:00 AM–6:00 PM</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Foliohub Law Firm. Demo project.</span
+        ><span>Built with care and clarity.</span>
+      </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
