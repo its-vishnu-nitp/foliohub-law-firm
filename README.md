@@ -1,4 +1,4 @@
-# Foliohub Law Firm — Project 25 (MY PART)
+# Foliohub Law Firm
 
 A complete, responsive **seven-page** demo law-firm website with a Node.js/Express API and MongoDB persistence. This is **only the Foliohub Law Firm project**; the Canvas and Bungee projects are not included.
 
